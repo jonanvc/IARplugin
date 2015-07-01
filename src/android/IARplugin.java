@@ -1,4 +1,4 @@
-package com.example.plugin;
+package eu.innovae.IARplugin;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
