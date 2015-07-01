@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="eu.innovae.IARplugin"
+        version="1.0">
+
+  <name>Innovae AR plugin</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/IARplugin.js" target="js/IARplugin.js"/>
+
+  <js-module src="www/IARplugin.js" name="IARplugin">
+    <clobbers target="IARplugin" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="IARplugin">
+        <param name="android-package" value="eu.innovae.IARplugin"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/IARplugin.java" target-dir="src/eu/innovae/IARplugin/"/>
+  </platform>
+
+</plugin>
