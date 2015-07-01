@@ -19,7 +19,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="IARplugin">
-        <param name="android-package" value="eu.innovae.IARplugin"/>
+        <param name="android-package" value="eu.innovae.IARplugin.IARplugin"/>
       </feature>
     </config-file>
 
